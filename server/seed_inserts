@@ -1,0 +1,4 @@
+insert into groups values(1,'Admin', '', '2001-12-23 14:39:53.66-05','2001-12-23 14:39:53.66-05');
+insert into groups values(2,'AdminReadOnly', '', '2001-12-23 14:39:53.66-05','2001-12-23 14:39:53.66-05');
+insert into groups values(3,'User', '', '2001-12-23 14:39:53.66-05','2001-12-23 14:39:53.66-05');
+insert into jobs (id, title, "createdAt", "updatedAt") values (0, 'things', NOW(), NOW());

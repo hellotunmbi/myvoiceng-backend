@@ -1,0 +1,24 @@
+[
+ {
+    "email": "admin@myapp.com",
+    "password":"password",
+    "groups": ["Admin", "User"],
+    "type": "Employer",
+    "platform": "ios"
+  },
+  {
+    "email": "alice@mail.com",
+    "password":"password",
+    "groups": ["User"],
+    "type": "Worker",
+    "platform": "ios"
+  },
+  {
+    "email": "bob@mail.com",
+    "password":"password",
+    "groups": ["User"],
+    "type": "Worker",
+    "platform": "ios"
+  }
+
+]

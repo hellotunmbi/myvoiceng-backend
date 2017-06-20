@@ -1,0 +1,57 @@
+
+{
+  "websiteUrl": "https://beavr-frontend.herokuapp.com",
+  "log": {
+    "console": {
+      "level": "debug",
+      "timestamp": true,
+      "colorize": true
+    }
+  },
+  "frontend": {
+    "path": "../client/build"
+  },
+  "http": {
+    "port": 9000,
+    "ver" : "/api/v1"
+  },
+  "db":{
+    "driver": "pg",
+    "dialect":"postgres",
+    "port": "5432",
+    "logging": true,
+    "storage": "./db.dev.sqlite",
+    "pool": {
+      "maxConnections": 100,
+      "maxIdleTime": 60
+    }
+  },
+  "cookie": {
+    "maxage": 31536000000
+  },
+  "aws":{
+    "s3":{
+      "region": "eu-central-1"
+    },
+    "sns":{
+      "region": "us-west-2"
+    }
+  },
+  "authentication":{
+    "facebook":{
+      "callbackURL": "https://beavr-backend.herokuapp.com/api/v1/auth/facebook/callback"
+    }
+  },
+  "mail": {
+    "from": "Beavr <hello@beavr.com>",
+    "signature": "Beavr Team",
+    "options": {
+      "service": "Mailgun"
+    }
+  },
+  "default_profile_img" : {
+    "beavr" : "https://s3.eu-central-1.amazonaws.com/beavrweb/beavr-red.png",
+    "employee" : "https://s3.eu-central-1.amazonaws.com/beavrweb/beavr-red.png",
+    "employer" : "https://s3.eu-central-1.amazonaws.com/beavrweb/beavr-red.png"
+  }
+}

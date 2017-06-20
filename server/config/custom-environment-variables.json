@@ -1,0 +1,42 @@
+
+{
+  "db":{
+    "database": "DB_DATABASE",
+    "user": "DB_USERNAME",
+    "password": "DB_PASSWORD",
+    "host": "DB_HOST"
+  },
+  "rabbitmq": {
+    "url": "RABBIT_MQ_URL"
+  },
+  "aws":{
+    "s3":{
+      "endpoint": "AWS_S3_ENDPOINT",
+      "accessKeyId": "AWS_S3_ACCESS_KEY_ID",
+      "secretAccessKey": "AWS_S3_SECRET_KEY"
+    },
+    "sns":{
+      "accessKeyId": "AWS_SNS_ACCESS_KEY_ID",
+      "secretAccessKey": "AWS_SNS_SECRET_KEY",
+      "iosArn": "AWS_SNS_IOS_ARN",
+      "androidArn": "AWS_SNS_ANDROID_ARN"
+    }
+  },
+  "authentication":{
+    "google":{
+      "apiKey": "GOOGLE_API_KEY"
+    },
+    "facebook":{
+      "clientID": "FACEBOOK_APP_ID",
+      "clientSecret": "FACEBOOK_SECRET"
+    }
+  },
+  "mail": {
+    "options": {
+      "auth": {
+        "user": "MAILGUN_USERNAME",
+        "pass": "MAILGUN_PASSWORD"
+      }
+    }
+  }
+}

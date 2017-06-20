@@ -1,0 +1,32 @@
+{
+  "name": "beavr",
+  "description": "Myvoice NG",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "install": "(cd server && yarn install)",
+    "start": "(cd server && gulp)",
+    "clean": "(cd server && npm clean)",
+    "test": "cd server && npm test",
+    "version": "npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:myvoiceng/myvoiceng.git"
+  },
+  "homepage": "https://github.com/myvoiceng/myvoiceng",
+  "author": {
+    "name": "Bolarinwa Motoni",
+    "email": "contactbolarinwa@gmail.com",
+    "url": "#"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta10",
+    "gulp": "^3.9.1"
+  },
+  "engines": {
+    "node": "6.x"
+  }
+}
