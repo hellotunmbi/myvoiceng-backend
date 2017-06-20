@@ -172,7 +172,7 @@ function middlewareInit(app, koaApp) {
   let cors = require('koa-cors');
   let corOptions = {
   origin: function(req){
-    var allowedOrigins = ['http://localhost:9000'];
+    var allowedOrigins = ['http://localhost:9000','https://myvoice-ng.herokuapp.com'];
     var origin = req.headers.origin;
     if(allowedOrigins.indexOf(origin) > -1){
          return origin;
