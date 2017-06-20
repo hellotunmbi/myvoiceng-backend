@@ -37,3 +37,6 @@ node_modules
 
 # React app specifics
 client/.vagrant/
+
+# server build
+server/build
