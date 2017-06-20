@@ -88,7 +88,7 @@ function middlewareInit(app, koaApp) {
     swaggerURL: '/swagger',
     swaggerJSON: '/api-docs.json',
     swaggerUI: './public/swagger/',
-    basePath: 'http://localhost:9000',
+    basePath: 'https://myvoice-ng.herokuapp.com',
     info: {
       title: 'swagger-koa sample app',
       description: 'Swagger + Koa = {swagger-koa}'
