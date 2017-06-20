@@ -119,6 +119,6 @@
     "sinon-as-promised": "4.0.0"
   },
   "engines": {
-    "node": "6.x"
+    "node": "5.x"
   }
 }
