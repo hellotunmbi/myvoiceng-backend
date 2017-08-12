@@ -67,12 +67,7 @@ module.exports = function(sequelize, DataTypes) {
         return Complaint.create(createObj);
       },
       deleteComplaint: async function deleteJob(id) {
-        return Complaint.destroy({
-              where:
-              { id: id
-              },
-              transaction: t
-            });
+        return Complaint.destroy({where:{ id: id}});
       }
     }
   });
