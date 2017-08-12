@@ -90,6 +90,9 @@ export function ComplaintHttpController(app, rabbitPublisher){
     async updateComplaint(context) {
       let params = context.params;
       return respond(context, complaintApi, complaintApi.updateComplaint, [context.passport.user, context.request.body, params.id]);
+    },
+    async deleteComplaint(context) {
+      return respond(context, complaintApi, complaintApi.deleteComplaint, [context.passport.user, params.id]);
     }
   };
 }
@@ -105,6 +108,7 @@ export default function ComplaintRouter(app){
   router.put('/category/:id', complaintHttpController.updateCategory);
   router.post('/', complaintHttpController.postComplaint);
   router.put('/:id', complaintHttpController.updateComplaint);
+  router.delete('/:id', complaintHttpController.deleteComplaint);
 
   app.server.baseRouter().mount("/complaints", router);
   return router;

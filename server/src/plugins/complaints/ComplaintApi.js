@@ -204,6 +204,36 @@ export default function ComplaintApi(app, rabbitPublisher) {
     },
     /**
      * @swagger
+     * path: /api/v1/complaints/{id}
+     * operations:
+     *   -  httpMethod: DELETE
+     *      summary: delete a Complaint
+     *      notes: delete a complaint
+     *      responseClass: Complaint
+     *      nickname: complaint
+     *      consumes:
+     *        - text/html
+     *      parameters:
+     *        - name: id
+     *          description: Id
+     *          paramType: path
+     *          required: true
+     *          dataType: number
+    */
+    async deleteComplaint(user, id) {
+      //validateJson(params, require('./schema/addCategory.json'));
+      let message,
+        status;
+        await models.Complaint.deleteComplaint(id);
+        status = true;
+        message = "Successful";
+      return {
+        success: status,
+        message: message
+      };
+    },
+    /**
+     * @swagger
      * path: /api/v1/complaints/category
      * operations:
      *   -  httpMethod: POST
