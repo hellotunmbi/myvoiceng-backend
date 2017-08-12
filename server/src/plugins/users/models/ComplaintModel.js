@@ -67,18 +67,12 @@ module.exports = function(sequelize, DataTypes) {
         return Complaint.create(createObj);
       },
       deleteComplaint: async function deleteJob(id) {
-        return sequelize.transaction(async function(t) {
-            Complaint.destroy({
+        return Complaint.destroy({
               where:
               { id: id
               },
               transaction: t
             });
-          })
-          .catch(function (err) {
-            log.error('deleteComplaint: rolling back', err);
-            throw err;
-          });
       }
     }
   });
