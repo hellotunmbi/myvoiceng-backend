@@ -92,6 +92,7 @@ export function ComplaintHttpController(app, rabbitPublisher){
       return respond(context, complaintApi, complaintApi.updateComplaint, [context.passport.user, context.request.body, params.id]);
     },
     async deleteComplaint(context) {
+      let params = context.params;
       return respond(context, complaintApi, complaintApi.deleteComplaint, [context.passport.user, params.id]);
     }
   };
