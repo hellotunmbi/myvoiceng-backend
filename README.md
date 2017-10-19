@@ -1,4 +1,4 @@
-Beavr is a ES6/ES7 React/Node Stack
+MyVoiceNG is a ES6/ES7 React/Node Stack
 ===================================
 
 Based on awesome work by Frederic Heem at [https://github.com/FredericHeem/](https://github.com/FredericHeem/).
